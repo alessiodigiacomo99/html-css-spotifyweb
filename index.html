@@ -5,24 +5,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotifyweb</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     </head>
     <body>
         <main id="site_content" class="d-flex">
+
             <aside id="aside" class="d-flex">
                     <div class="d-flex">
-                        <div class="logo">lorem</div>
-                        <div class="home">lorem</div>
-                        <div class="playlist">lorem</div>
+                        <div class="logo">
+                            <img src="img/logo-small.svg" alt="">
+                        </div>
+                        <!-- /logo -->
+                        <div class="home text-capitalize over">
+                            <ul>
+                                <li><img src="img/home.svg" alt=""><span>home</span></li>
+                                <li><img src="img/search.svg" alt=""><span>cerca</span></li>
+                                <li><img src="img/libreria.svg" alt=""><span>la tua libreria</span></li>
+                            </ul>
+                        </div>
+                        <!-- /home -->
+                        <div class="playlist">
+                            <h3 class="text-uppercase">playlist</h3>
+                            <ul class="text-capitalize">
+                                <li>
+                                    <i class="fas fa-plus-square"></i><span>crea playlist</span>
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>
+                                <li>
+                                    nome playlist
+                                </li>   
+                            </ul>
+                        </div>
+                        <!-- /playlist -->
                     </div>
-                    <div class="account">lorem</div>  
+                    <div class="account over">
+                        <div>
+                            <img src="img/download.svg" alt="">
+                            <span>Installa app</span>
+                        </div>
+                        <div>
+                            <img src="img/profile.svg" alt="">
+                            <span class="text_capitalize">John doe</span>
+                        </div>
+                    </div>  
             </aside>
             <!-- /aside -->
-            <div class="wrapper">
-                <div class="upgrade">
 
+            <div class="wrapper">
+
+                <div class="upgrade d-flex">
+                    <button class="text-uppercase"> effettua l'upgrade</button>
                 </div>
                 <nav class="navbar">
-
+                    <ul class="text-uppercase d-flex">
+                        <li>in evidenza</li>
+                        <li>podcast</li>
+                        <li>classifiche</li>
+                        <li>generi e mood</li>
+                        <li>nuove uscite</li>
+                        <li>scopri</li>
+                    </ul>
                 </nav>
                 <!-- /navbar -->
                 <section class="recently_played d-flex">
