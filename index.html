@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotifyweb</title>
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+
         <main id="site_content" class="d-flex">
 
             <aside id="aside" class="d-flex">
@@ -74,6 +75,8 @@
                 <div class="upgrade d-flex">
                     <button class="text-uppercase"> effettua l'upgrade</button>
                 </div>
+                <!-- /upgrade -->
+
                 <nav class="navbar">
                     <ul class="text-uppercase d-flex">
                         <li>in evidenza</li>
@@ -85,78 +88,107 @@
                     </ul>
                 </nav>
                 <!-- /navbar -->
-                <section class="recently_played d-flex">
-                    <h2></h2>
-                    <div class="album">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <h5></h5>
-                    </div>
-                    <h2></h2>
-                    <div class="album">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <h5></h5>
-                    </div>
-                    <h2></h2>
-                    <div class="album">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <h5></h5>
-                    </div>
-                    <h2></h2>
-                    <div class="album">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <h5></h5>
-                    </div>
-                    <h2></h2>
-                    <div class="album">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <h5></h5>
-                    </div>
-                    <h2></h2>
-                    <div class="album">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <h5></h5>
+
+                <section>
+                    <h2>Recently played</h2>
+                    <div class="recently_played d-flex">
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Heavy metal</h3>
+                            <h5>Subtitle</h5>
+                        </div>
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>A quiet place</h3>
+                            <h5>Subtitle</h5>
+                        </div>
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/split.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Split</h3>
+                            <h5>Subtitle</h5>
+                        </div>
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/cure.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>A cure for wellness</h3>
+                            <h5>Subtitle</h5>
+                        </div>
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/sinister.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Sinister</h3>
+                            <h5>Subtitle</h5>
+                        </div>
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/player_left.jpg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Player left</h3>
+                            <h5>Subtitle</h5>
+                        </div>
                     </div>
                 </section>
                 <!-- /recently_played -->
 
-                <section class="created d-flex">
-                    <div class="album">
-                        <h2></h2>
-                        <h5></h5>
-                        <img src="" alt="">
-                        <h4></h4>
-                    </div> 
-                    <div class="album">
-                        <h2></h2>
-                        <h5></h5>
-                        <img src="" alt="">
-                        <h4></h4>
+                <section>
+                    <h2>Creato per John Doe </h2>
+                    <h5>Più ascolti, più saranno accurati i suggerimenti</h5>
+                    <div class="created d-flex">
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/radar.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3 class="text-capitalize">Release radar</h3>
+                        </div> 
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3 class="text-capitalize">daily mix 1</h3>
+                        </div>
                     </div>
                 </section>
                 <!-- /created -->
 
-                <section class="popular d-flex">
-                    <div class="album">
-                        <h5></h5>
-                        <img src="" alt="">
-                        <h2></h2>
-                    </div>
-                    <div class="album">
-                        <h5></h5>
-                        <img src="" alt="">
-                        <h2></h2>
+                <section>
+                    <h2>Artisti più popolari</h2>
+                    <h5>Più ascolti, più saranno accurati i suggerimenti</h5>
+                    <div class="popular d-flex">
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/youg.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <div class="layover">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- /popular -->
 
             </div>
             <!-- wrapper -->
+
         </main>
         <!-- /main -->
 
@@ -166,5 +198,6 @@
             <div class="volume"></div>
         </footer>
         <!-- footer -->
+        
     </body>
 </html>
