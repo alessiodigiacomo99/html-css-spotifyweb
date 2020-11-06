@@ -329,15 +329,7 @@ section h2, section h5{
         align-self: center;
     }
 
-    .home ul li span{
-        display: none;
-    }
-
-    .playlist{
-        display: none;
-    }
-
-    .account span{
+    .home ul li span, .playlist, .account span{
         display: none;
     }
 
@@ -352,11 +344,7 @@ section h2, section h5{
 }
 
 @media screen and (max-width: 480px){
-    .brano{
-        display: none;
-    }
-
-    .volume{
+    .brano, .volume{
         display: none;
     }
 
@@ -364,4 +352,11 @@ section h2, section h5{
         width: 100%;
         margin: auto;
     }
+}
+
+@media screen and (max-height: 250px){
+    .upgrade, .account{
+        display: none;
+    }
+
 }
