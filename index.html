@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotifyweb</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -14,10 +14,12 @@
 
             <aside id="aside" class="d-flex">
                     <div class="d-flex">
+
                         <div class="logo">
                             <img src="img/logo-small.svg" alt="">
                         </div>
                         <!-- /logo -->
+
                         <div class="home text-capitalize over">
                             <ul>
                                 <li><img src="img/home.svg" alt=""><span>home</span></li>
@@ -26,6 +28,7 @@
                             </ul>
                         </div>
                         <!-- /home -->
+
                         <div class="playlist">
                             <h3 class="text-uppercase">playlist</h3>
                             <ul class="text-capitalize">
@@ -56,6 +59,7 @@
                             </ul>
                         </div>
                         <!-- /playlist -->
+
                     </div>
                     <div class="account over">
                         <div>
@@ -66,7 +70,8 @@
                             <img src="img/profile.svg" alt="">
                             <span class="text_capitalize">John doe</span>
                         </div>
-                    </div>  
+                    </div> 
+                     <!--/account  -->
             </aside>
             <!-- /aside -->
 
@@ -92,6 +97,7 @@
                 <section>
                     <h2>Recently played</h2>
                     <div class="recently_played d-flex">
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/metal_lifting.jpg" alt="">
@@ -100,6 +106,7 @@
                             <h3>Heavy metal</h3>
                             <h5>Subtitle</h5>
                         </div>
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/aquietplace.jpeg" alt="">
@@ -108,6 +115,7 @@
                             <h3>A quiet place</h3>
                             <h5>Subtitle</h5>
                         </div>
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/split.jpeg" alt="">
@@ -116,6 +124,7 @@
                             <h3>Split</h3>
                             <h5>Subtitle</h5>
                         </div>
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/cure.jpeg" alt="">
@@ -124,6 +133,7 @@
                             <h3>A cure for wellness</h3>
                             <h5>Subtitle</h5>
                         </div>
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/sinister.jpeg" alt="">
@@ -132,6 +142,7 @@
                             <h3>Sinister</h3>
                             <h5>Subtitle</h5>
                         </div>
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/player_left.jpg" alt="">
@@ -140,6 +151,7 @@
                             <h3>Player left</h3>
                             <h5>Subtitle</h5>
                         </div>
+
                     </div>
                 </section>
                 <!-- /recently_played -->
@@ -148,6 +160,7 @@
                     <h2>Creato per John Doe </h2>
                     <h5>Più ascolti, più saranno accurati i suggerimenti</h5>
                     <div class="created d-flex">
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/radar.jpeg" alt="">
@@ -155,6 +168,7 @@
                             </div>
                             <h3 class="text-capitalize">Release radar</h3>
                         </div> 
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/mixdaily.jpeg" alt="">
@@ -162,6 +176,7 @@
                             </div>
                             <h3 class="text-capitalize">daily mix 1</h3>
                         </div>
+
                     </div>
                 </section>
                 <!-- /created -->
@@ -170,18 +185,21 @@
                     <h2>Artisti più popolari</h2>
                     <h5>Più ascolti, più saranno accurati i suggerimenti</h5>
                     <div class="popular d-flex">
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/youg.jpeg" alt="">
                                 <i class="far fa-play-circle"></i>
                             </div>
                         </div>
+
                         <div class="album">
                             <div class="layover">
                                 <img src="img/einaudi.jpeg" alt="">
                                 <i class="far fa-play-circle"></i>
                             </div>
                         </div>
+
                     </div>
                 </section>
                 <!-- /popular -->
@@ -193,11 +211,49 @@
         <!-- /main -->
 
         <footer id="site_footer" class="d-flex">
-            <div class="brano"></div>
-            <div class="player"></div>
-            <div class="volume"></div>
+            <div class="brano d-flex text-capitalize">
+                <img src="img/sinister.jpeg" alt="">
+                <div>
+                    <h5>Sinister</h5>
+                    <h6>brano nome</h6>
+                </div>
+                <div class="icone_brano">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <!-- /brano -->
+
+            <div class="player d-flex">
+                <div class="icone_player d-flex">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="minute d-flex">
+                    <span>0.25</span>
+                    <div class="time">
+                        <div class="partial_time"></div>
+                    </div>
+                    <span>4.35</span>
+                </div>
+            </div>
+            <!-- /player -->
+
+            <div class="volume d-flex">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="time">
+                    <div class="partial_time"></div>
+                </div>
+            </div>
+            <!-- /volume -->
+
         </footer>
         <!-- footer -->
-        
+
     </body>
 </html>
