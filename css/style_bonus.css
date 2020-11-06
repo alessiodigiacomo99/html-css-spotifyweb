@@ -175,13 +175,13 @@ nav ul div.d-flex{
     flex-wrap: nowrap;
 }
 
+section{
+    overflow: hidden;
+}
+
 section h2, section h5{
     margin: 10px 20px;
     font-weight: 600;
-}
-
-.recently_played, .created, .popular{
-    flex-wrap: wrap;
 }
 
 .album{
