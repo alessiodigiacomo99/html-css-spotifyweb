@@ -46,7 +46,11 @@ h5{
 
 .logo img{
     margin: 10px;
-    width: 40px;
+    width: 100px;
+}
+
+.logo img:nth-child(2){
+    display: none;
 }
 
 .home img{
@@ -62,6 +66,7 @@ h5{
 .home ul li:hover{
     border-left: 4px solid yellowgreen;
     color: white;
+    transition: all 0.2s;
 }
 
 .home ul li span{
@@ -115,7 +120,7 @@ h5{
     color: white;
     font-weight: 600;
 }
-
+/* /aside */
 .wrapper{
     padding-top: 80px;
     background-color: #24242a;
@@ -168,13 +173,17 @@ nav ul li{
 
 nav ul li:hover{
     color: white;
-    border-bottom: 4px solid yellowgreen;
+    
 }
 
-nav ul div.d-flex{
-    flex-wrap: nowrap;
+nav ul li:hover div{
+    width: 40px;
+    height: 4px;
+    margin: auto;
+    background-color: yellowgreen;
+    transition: all 0.2s;
 }
-
+/* /navbar */
 section{
     overflow: hidden;
 }
@@ -204,6 +213,17 @@ section h2, section h5{
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    animation: play-circle 1s;
+}
+
+@keyframes play-circle{
+    0%{
+        font-size: 6em;
+    }
+
+    100%{
+        font-size: 4em;
+    }
 }
 
 .album img{
@@ -228,6 +248,7 @@ section h2, section h5{
 .popular .album img, .popular .album .layover{
     border-radius: 50%;
 }
+/* /main */
 
 #site_footer{
     justify-content: space-between;
@@ -301,8 +322,23 @@ section h2, section h5{
 
 .partial_time{
     background-color: white;
-    width: 20%;
     height: 100%;
+    width: 20%;
+}
+
+.player .partial_time{
+    animation: tempo 40s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tempo{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
 }
 
 .volume{
@@ -318,16 +354,23 @@ section h2, section h5{
     width: 100px;
     margin-right: 10px;
 }
+/* /footer */
 
 @media screen and (max-width: 767px){
     #aside{
         width: 50px;
     }
 
-    .logo img{
+    .logo img:first-child{
+        display: none;
+    }
+    
+    .logo img:nth-child(2){
+        display: block;
         width: 30px;
         align-self: center;
     }
+    
 
     .home ul li span, .playlist, .account span{
         display: none;

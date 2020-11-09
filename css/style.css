@@ -46,7 +46,11 @@ h5{
 
 .logo img{
     margin: 10px;
-    width: 40px;
+    width: 100px;
+}
+
+.logo img:nth-child(2){
+    display: none;
 }
 
 .home img{
@@ -62,6 +66,7 @@ h5{
 .home ul li:hover{
     border-left: 4px solid yellowgreen;
     color: white;
+    transition: all 0.2s;
 }
 
 .home ul li span{
@@ -168,11 +173,15 @@ nav ul li{
 
 nav ul li:hover{
     color: white;
-    border-bottom: 4px solid yellowgreen;
+    
 }
 
-nav ul div.d-flex{
-    flex-wrap: nowrap;
+nav ul li:hover div{
+    width: 40px;
+    height: 4px;
+    margin: auto;
+    background-color: yellowgreen;
+    transition: all 0.2s;
 }
 
 section h2, section h5{
@@ -323,11 +332,17 @@ section h2, section h5{
     #aside{
         width: 50px;
     }
-
-    .logo img{
+    
+    .logo img:first-child{
+        display: none;
+    }
+    
+    .logo img:nth-child(2){
+        display: block;
         width: 30px;
         align-self: center;
     }
+    
 
     .home ul li span{
         display: none;
