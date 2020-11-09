@@ -82,6 +82,11 @@ h5{
     line-height: 30px;
 }
 
+.playlist ul li:first-child:hover{
+    color: white;
+    transition: all 0.2s;
+}
+
 .playlist i{
     font-size: 2.5em;
     vertical-align: middle;
@@ -106,8 +111,19 @@ h5{
     cursor: pointer;
 }
 
+.account div:first-child:hover{
+    color: white;
+    transition: all 0.2s;
+}
+
+.account div:first-child:hover img{
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
 #aside .account img{
     width: 15px;
+    margin: 0 5px;
 }
 
 .account div:last-child img{
@@ -152,7 +168,7 @@ h5{
 }
 
 .upgrade div:hover{
-    transition: transform 1s;
+    transition: transform 0.5s;
     transform: scale(1);
 }
 
@@ -173,7 +189,6 @@ nav ul li{
 
 nav ul li:hover{
     color: white;
-    
 }
 
 nav ul li:hover div{
@@ -289,18 +304,33 @@ section h2, section h5{
 }
 
 .player .icone_player{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 5px;
+    align-items: center;
+}
+
+.player .icone_player i:nth-child(3){
+    font-size: 2rem;
+}
+
+.player .icone_player i:hover:nth-child(3){
+    transform: scale(1.3);
+    transition: transform 0.5s;
 }
 
 .player .icone_player, .volume i, .brano .icone_brano{
-    color: white;
+    color: rgb(202, 200, 200);
     align-self: center;
 }
 
 .player .icone_player i, .volume i, .brano .icone_brano i{
     margin: 0 5px;
     cursor: pointer;
+}
+
+.player .icone_player i:hover, .volume i:hover, .brano .icone_brano i:hover{
+    color: white;
+    transition: color 0.2s;
 }
 
 .minute{
@@ -324,12 +354,31 @@ section h2, section h5{
     background-color: white;
     height: 100%;
     width: 20%;
+    cursor: pointer;
+    position: relative;
 }
 
 .player .partial_time{
     animation: tempo 40s linear;
     animation-iteration-count: infinite;
 }
+
+.partial_time button{
+    display: none;
+}
+
+.partial_time:hover button{
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color:white;
+    border: 0;
+    position: absolute;
+    right: 0;
+    transform: translate(5px, -3px);
+}
+
 
 @keyframes tempo{
     0%{

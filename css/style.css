@@ -152,7 +152,7 @@ h5{
 }
 
 .upgrade div:hover{
-    transition: transform 1s;
+    transition: transform 0.5s;
     transform: scale(1);
 }
 
@@ -332,7 +332,7 @@ section h2, section h5{
     #aside{
         width: 50px;
     }
-    
+
     .logo img:first-child{
         display: none;
     }
