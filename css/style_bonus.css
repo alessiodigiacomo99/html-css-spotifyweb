@@ -69,10 +69,6 @@ h5{
     transition: all 0.2s;
 }
 
-.home ul li span{
-    line-height: 30px;
-}
-
 .playlist{
     overflow-y: auto;
     margin: 0 10px;
@@ -189,6 +185,7 @@ nav ul li{
 
 nav ul li:hover{
     color: white;
+    transition: all 0.2;
 }
 
 nav ul li:hover div{
@@ -200,7 +197,7 @@ nav ul li:hover div{
 }
 /* /navbar */
 section{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 section h2, section h5{
@@ -215,20 +212,19 @@ section h2, section h5{
 
 .layover{
     width: 100%;
-    background-color: black;
     position: relative;
+    cursor: pointer;
 }
 
 .layover i.fa-play-circle{
     display: none;
     color: white;
-    font-size: 4em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
     animation: play-circle 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes play-circle{
@@ -242,14 +238,12 @@ section h2, section h5{
 }
 
 .album img{
-    width: 100%;
-    min-width: 200px;
+   width: 200px;
 }
 
-.album .layover:hover img {
-    opacity: 0.3;
-    cursor: pointer;
-    transition: opacity 1s;
+.layover:hover img{
+    filter: brightness(0.2) drop-shadow(2px 4px 6px black);
+    transition: all 1s;
 }
 
 .album .layover:hover i.fa-play-circle{
@@ -266,7 +260,6 @@ section h2, section h5{
 /* /main */
 
 #site_footer{
-    justify-content: space-between;
     width: 100%;
     height: 50px;
     position: fixed;
@@ -311,6 +304,7 @@ section h2, section h5{
 
 .player .icone_player i:nth-child(3){
     font-size: 2rem;
+    margin: 0 15px;
 }
 
 .player .icone_player i:hover:nth-child(3){
@@ -318,8 +312,8 @@ section h2, section h5{
     transition: transform 0.5s;
 }
 
-.player .icone_player, .volume i, .brano .icone_brano{
-    color: rgb(202, 200, 200);
+.brano .icone_brano, .player .icone_player, .volume i{
+    color: rgb(200, 200, 200);
     align-self: center;
 }
 
@@ -331,10 +325,6 @@ section h2, section h5{
 .player .icone_player i:hover, .volume i:hover, .brano .icone_brano i:hover{
     color: white;
     transition: color 0.2s;
-}
-
-.minute{
-    flex-direction: row;
 }
 
 .minute span{

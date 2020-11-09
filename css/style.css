@@ -200,8 +200,8 @@ section h2, section h5{
 
 .layover{
     width: 100%;
-    background-color: black;
     position: relative;
+    cursor: pointer;
 }
 
 .layover i.fa-play-circle{
@@ -212,7 +212,7 @@ section h2, section h5{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
+    animation: play-circle 1s;
 }
 
 .album img{
@@ -220,10 +220,9 @@ section h2, section h5{
     min-width: 200px;
 }
 
-.album .layover:hover img {
-    opacity: 0.3;
-    cursor: pointer;
-    transition: opacity 1s;
+.layover:hover img{
+    filter: brightness(0.2) drop-shadow(2px 4px 6px black);
+    transition: all 1s;
 }
 
 .album .layover:hover i.fa-play-circle{
